@@ -1,0 +1,28 @@
+﻿<Window x:Class="dostavki.KyrierWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dostavki"
+        mc:Ignorable="d"
+        Title="KyrierWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFF9B130"/>
+                <GradientStop Color="#FF8A63B9" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <DataGrid x:Name="kyrier" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,354,0" Loaded="kyrier_Loaded" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="zakaz" Binding="{Binding [zakaz]}" />
+                <DataGridTextColumn Header="status" Binding="{Binding [status]}" />
+                <DataGridTextColumn Header="adress" Binding="{Binding [adress]}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="done" Content="Готово" Margin="540,122,103,253" Click="done_click"/>
+        <Button x:Name="prepare" Content="Изменить" Margin="540,203,103,172" Click="prepare_click"/>
+        <Image Source="/free-icon-delivery-man-2311481.png" Margin="463,10,26,317"/>
+        <Button x:Name="refresh" Content="Обновить" Margin="540,292,103,83" Click="refreh_click"/>
+    </Grid>
+</Window>

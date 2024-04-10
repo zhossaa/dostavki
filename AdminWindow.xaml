@@ -1,0 +1,41 @@
+﻿<Window x:Class="dostavki.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dostavki"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFF9B130"/>
+                <GradientStop Color="#FF8963BA" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <DataGrid x:Name="admin" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,362,264" Loaded="admin_Loaded"/>
+        <TextBox x:Name="login" TextWrapping="Wrap" Text="Логин" Width="120" Margin="463,22,217,370"/>
+        <TextBox x:Name="password" TextWrapping="Wrap" Text="Пароль" Width="120" Margin="463,83,217,308"/>
+        <Button Content="Добавить" Margin="615,22,55,370" Click="add_Click"/>
+        <Button Content="Удалить" Margin="615,78,55,308" Click="delete_Click"/>
+        <Button Content="Обновить" Margin="615,140,55,244" Click="refresh_Click"/>
+        <DataGrid x:Name="zakaz" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,198,362,0" Loaded="zakaz_Loaded"/>
+        <TextBox x:Name="zakazs" HorizontalAlignment="Left" Margin="463,198,0,0" TextWrapping="Wrap" Text="Заказ" VerticalAlignment="Top" Width="120" Height="42"/>
+        <Button Content="Добавить" Margin="615,219,55,172" Click="add_Click_2"/>
+        <Button Content="Удалить" Margin="615,273,55,120" Click="delete_Click_2"/>
+        <Button Content="Обновить" Margin="614,321,56,70" Click="refresh_Click_2" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="1.385"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.641"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="count" TextWrapping="Wrap" Text="Цена" Margin="463,298,217,92"/>
+        <TextBox x:Name="adress" TextWrapping="Wrap" Text="Адрес" Margin="463,245,217,145"/>
+        <Button Content="Изменить" Margin="615,367,55,24" Click="create_Click"/>
+
+    </Grid>
+</Window>

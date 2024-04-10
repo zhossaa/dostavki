@@ -1,0 +1,23 @@
+﻿<Window x:Class="dostavki.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dostavki"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF8963BA" Offset="1"/>
+                <GradientStop Color="#FFF9B130" Offset="0"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="login" TextWrapping="Wrap" Text="Логин" Margin="400,52,55,308"/>
+        <PasswordBox x:Name="password"   Margin="400,156,55,205"/>
+        <Label Content="Пароль" Margin="400,126,241,283"/>
+        <Button Content="Вход" Margin="400,242,55,119" Click="Вход_Click" Background="#FFF1D4A4"/>
+        <Button Content="Регистрация" Margin="400,328,55,33" Click="Регистрация_Click" Background="#FFF1D4A4"/>
+        <Image Source="/free-icon-door-to-door-5966216.png" Margin="-78,26,346,33"/>
+    </Grid>
+</Window>

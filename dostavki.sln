@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dostavki", "dostavki.csproj", "{AA896153-9EFB-4F08-A691-D17D695E44AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA896153-9EFB-4F08-A691-D17D695E44AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA896153-9EFB-4F08-A691-D17D695E44AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA896153-9EFB-4F08-A691-D17D695E44AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA896153-9EFB-4F08-A691-D17D695E44AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3197766-390F-4ADF-93CE-7A0993BC0FA5}
+	EndGlobalSection
+EndGlobal
